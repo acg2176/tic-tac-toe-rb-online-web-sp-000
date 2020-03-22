@@ -111,11 +111,11 @@ def draw?(board)
 end
 
 def over?(board)
-  if full?(board) && !won?(board)
+  if full?(board) && !won?(board) #not won and full = draw
     true
-  elsif won?(board) && full?(board)
+  elsif won?(board) && full?(board) #won and full
     true
-  elsif won?(board) && !full?(board)
+  elsif won?(board) && !full?(board) #won and not full
     true
   end
 end
@@ -135,4 +135,9 @@ def winner(board)
 end
 
 def play(board)
+  while !over?(board) #while False
+    turn(board)
+  end
+
+  if 
 end
