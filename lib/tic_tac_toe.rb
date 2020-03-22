@@ -135,9 +135,9 @@ def winner(board)
 end
 
 def play(board)
-  #until over?(board) == true #while False
-    #turn(board)
-  #end
+  until over?(board) == true #while False
+    turn(board)
+  end
   #if won?(board) && winner(board) == "X"
     #puts "Congratulations X!"
   #elsif won?(board) && winner(board) == "O"
