@@ -105,11 +105,8 @@ end
 def draw?(board)
   if full?(board)  && !won?(board)
     return true
-  elsif !won?(board) && !full?(board)
-    return false
-  elsif won?(board) == [0,1,2]
-    return false
-  end
+  else
+    false
 end
 
 def over?(board)
