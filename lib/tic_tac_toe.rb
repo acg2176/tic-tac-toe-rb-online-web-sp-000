@@ -134,7 +134,7 @@ def winner(board)
   end
 end
 
-#def play(board)
+def play(board)
   #until over?(board) == true #while False
     #turn(board)
   #end
@@ -145,4 +145,4 @@ end
   #elsif draw?(board)
     #puts "Cat's Game!"
   #end
-#end
+end
