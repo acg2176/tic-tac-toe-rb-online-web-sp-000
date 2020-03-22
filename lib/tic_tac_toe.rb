@@ -135,8 +135,19 @@ def winner(board)
 end
 
 def play(board)
-  while !over?(board) #while False
+  until over?(board) == true #while False
     turn(board)
   end
+  if winner(board) == "X"
+    puts "Congratulations X!"
+  elsif winner(baord) == "O"
+    puts "Congratulations O!"
+  elsif draw?(board)
+    puts "Cat's Game!"
+  end
+end
+end
+
+
 
 end
