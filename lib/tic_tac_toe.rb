@@ -139,5 +139,4 @@ def play(board)
     turn(board)
   end
 
-  if 
 end
